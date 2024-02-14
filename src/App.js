@@ -29,7 +29,7 @@ function App() {
   const handleCheckboxChange = (event, id) => {
     const isChecked = event.target.checked;
 
-    if (isChecked || selectedProducts.length >= 4) {
+    if (isChecked || selectedProducts.length > 3) {
       const updatedSelectedProducts = isChecked
         ? [...selectedProducts, id]
         : selectedProducts.filter((selectedId) => selectedId !== id);
