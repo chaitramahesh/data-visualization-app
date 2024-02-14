@@ -1,7 +1,16 @@
+DATA VISUALIZATION APP
+
+![alt text](<Screenshot 2024-02-14 171700.png>)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Install
+In the project directory, you can run:
+
+### `npm install`
+to Install packages and dependencies
 ## Available Scripts
 
 In the project directory, you can run:
