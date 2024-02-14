@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useState, useEffect } from "react";
 import DataTable from "./Components/Table/DataTable";
 import BarChart from "./Components/Chart/BarChart";
