@@ -1,5 +1,6 @@
 // src/components/DataTable.js
 import React, { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./DataTable.css";
 
 const DataTable = ({ data, selectedProducts, onCheckboxChange }) => {
@@ -85,20 +86,20 @@ const DataTable = ({ data, selectedProducts, onCheckboxChange }) => {
       </table>
 
       <div className="pagination">
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
         <span>{`${startIndex + 1}-${endIndex} of ${
           filteredData.length
         } `}</span>
         <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          <FaChevronLeft />
+        </button>
+        <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
         >
-          Next
+          <FaChevronRight />
         </button>
       </div>
     </div>

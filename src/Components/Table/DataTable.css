@@ -1,30 +1,39 @@
 .data-table {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-.search{
-    display: flex;
-    justify-content: right;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.search {
+  display: flex;
+  justify-content: right;
 }
 
-.search input{
-    height: 25px;
-    border-radius: 5px;
-    border: 1px black solid;
-    padding-left: 8px;
+.search input {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px black solid;
+  padding-left: 8px;
 }
-  .pagination{
-    display: flex;
-    width: 100%;
-    gap: 5px;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 10px;
-  }
+.pagination {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+.pagination span {
+  font-weight: 500;
+  align-items: center;
+  font-size: 14px;
+}
 
-  table{
-    width: 100%;
-    text-align: left;
-    margin:20px 10px;
-    
-  }
+table {
+  width: 100%;
+  text-align: left;
+  margin: 20px 10px;
+}
+
+button {
+  background-color: white;
+  border: white;
+}
