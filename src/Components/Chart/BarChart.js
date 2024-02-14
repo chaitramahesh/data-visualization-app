@@ -1,4 +1,4 @@
-// src/components/BarChart.js
+
 import React, { useEffect, useState } from "react";
 import Plot from "react-plotly.js";
 import "./BarChart.css";
@@ -10,7 +10,6 @@ const BarChart = ({ data, selectedProducts }) => {
   });
 
   useEffect(() => {
-    // Fetch data for the selected rows
     const fetchData = async () => {
       try {
         const selectedIds = selectedProducts;
@@ -44,7 +43,9 @@ const BarChart = ({ data, selectedProducts }) => {
           },
         ]}
         layout={{
+          displaylogo: false,
           title: "Data Visualization",
+          showlegend: false,
           font: {
             family:
               "Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
@@ -53,6 +54,9 @@ const BarChart = ({ data, selectedProducts }) => {
           },
           xaxis: { title: "Product Name" },
           yaxis: { title: "Price" },
+        }}
+        config={{
+          displayModeBar: false,  
         }}
       />
     </div>

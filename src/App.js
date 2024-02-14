@@ -11,8 +11,6 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    // Fetch initial data
-    // Replace the URL with your backend service URL
     fetch(`https://dummyjson.com/products?limit=0`)
       .then((response) => response.json())
       .then((data) => {

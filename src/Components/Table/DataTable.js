@@ -1,4 +1,4 @@
-// src/components/DataTable.js
+
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./DataTable.css";
@@ -9,7 +9,7 @@ const DataTable = ({ data, selectedProducts, onCheckboxChange }) => {
   const [filteredData, setFilteredData] = useState(data);
 
   useEffect(() => {
-    // Update filtered data when data changes
+  
     setFilteredData(data);
   }, [data]);
 
