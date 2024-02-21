@@ -1,4 +1,4 @@
-# DATA VISUALIZATION APP
+#                                     DATA VISUALIZATION APP
 
 ![alt text](<Screenshot 2024-02-14 171700.png>)
 
